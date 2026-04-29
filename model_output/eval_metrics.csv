@@ -1,0 +1,2 @@
+accuracy,precision,recall,f1_score,pearson_r,pearson_pval,spearman_rho,spearman_pval,mse,mae
+0.8,1.0,0.6117,0.759,0.8872,0.0,0.9017,0.0,0.053925,0.193478
