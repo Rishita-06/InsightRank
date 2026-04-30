@@ -14,34 +14,75 @@ PLUS_THR = 0.35
 GAP_THR  = 0.18
 
 SKILL_LINKS = {
-    "python": (
-        "https://www.coursera.org/search?query=python",
-        "https://www.udemy.com/courses/search/?q=python"
-    ),
-    "machine learning": (
-        "https://www.coursera.org/search?query=machine%20learning",
-        "https://www.udemy.com/courses/search/?q=machine%20learning"
-    ),
-    "deep learning": (
-        "https://www.coursera.org/search?query=deep%20learning",
-        "https://www.udemy.com/courses/search/?q=deep%20learning"
-    ),
-    "c++": (
-        "https://www.coursera.org/search?query=c%2B%2B",
-        "https://www.udemy.com/courses/search/?q=c%2B%2B"
-    ),
-    "ros": (
-        "https://www.coursera.org/search?query=robot%20operating%20system",
-        "https://www.udemy.com/courses/search/?q=ros"
-    ),
-    "embedded systems": (
-        "https://www.coursera.org/search?query=embedded%20systems",
-        "https://www.udemy.com/courses/search/?q=embedded%20systems"
-    ),
-    "computer vision": (
-        "https://www.coursera.org/search?query=computer%20vision",
-        "https://www.udemy.com/courses/search/?q=computer%20vision"
-    ),
+    # ── Programming ──
+    "python": ("https://www.coursera.org/search?query=python", "https://www.udemy.com/courses/search/?q=python"),
+    "c++": ("https://www.coursera.org/search?query=c%2B%2B", "https://www.udemy.com/courses/search/?q=c%2B%2B"),
+    "java": ("https://www.coursera.org/search?query=java", "https://www.udemy.com/courses/search/?q=java"),
+    "c": ("https://www.coursera.org/search?query=c%20programming", "https://www.udemy.com/courses/search/?q=c%20programming"),
+    "javascript": ("https://www.coursera.org/search?query=javascript", "https://www.udemy.com/courses/search/?q=javascript"),
+    "typescript": ("https://www.coursera.org/search?query=typescript", "https://www.udemy.com/courses/search/?q=typescript"),
+    "dart": ("https://www.coursera.org/search?query=dart", "https://www.udemy.com/courses/search/?q=dart"),
+
+    # ── Web Development ──
+    "html": ("https://www.coursera.org/search?query=html", "https://www.udemy.com/courses/search/?q=html"),
+    "css": ("https://www.coursera.org/search?query=css", "https://www.udemy.com/courses/search/?q=css"),
+    "react": ("https://www.coursera.org/search?query=react", "https://www.udemy.com/courses/search/?q=react"),
+    "node.js": ("https://www.coursera.org/search?query=nodejs", "https://www.udemy.com/courses/search/?q=nodejs"),
+    "express": ("https://www.coursera.org/search?query=express%20js", "https://www.udemy.com/courses/search/?q=express"),
+    "frontend development": ("https://www.coursera.org/search?query=frontend", "https://www.udemy.com/courses/search/?q=frontend"),
+    "backend development": ("https://www.coursera.org/search?query=backend", "https://www.udemy.com/courses/search/?q=backend"),
+
+    # ── App Development ──
+    "flutter": ("https://www.coursera.org/search?query=flutter", "https://www.udemy.com/courses/search/?q=flutter"),
+    "android": ("https://www.coursera.org/search?query=android%20development", "https://www.udemy.com/courses/search/?q=android"),
+    "ios": ("https://www.coursera.org/search?query=ios%20development", "https://www.udemy.com/courses/search/?q=ios"),
+
+    # ── Data Science & AI ──
+    "machine learning": ("https://www.coursera.org/search?query=machine%20learning", "https://www.udemy.com/courses/search/?q=machine%20learning"),
+    "deep learning": ("https://www.coursera.org/search?query=deep%20learning", "https://www.udemy.com/courses/search/?q=deep%20learning"),
+    "data science": ("https://www.coursera.org/search?query=data%20science", "https://www.udemy.com/courses/search/?q=data%20science"),
+    "nlp": ("https://www.coursera.org/search?query=natural%20language%20processing", "https://www.udemy.com/courses/search/?q=nlp"),
+    "computer vision": ("https://www.coursera.org/search?query=computer%20vision", "https://www.udemy.com/courses/search/?q=computer%20vision"),
+    "pandas": ("https://www.coursera.org/search?query=pandas", "https://www.udemy.com/courses/search/?q=pandas"),
+    "numpy": ("https://www.coursera.org/search?query=numpy", "https://www.udemy.com/courses/search/?q=numpy"),
+    "matplotlib": ("https://www.coursera.org/search?query=matplotlib", "https://www.udemy.com/courses/search/?q=matplotlib"),
+    "scikit-learn": ("https://www.coursera.org/search?query=scikit%20learn", "https://www.udemy.com/courses/search/?q=scikit%20learn"),
+    "tensorflow": ("https://www.coursera.org/search?query=tensorflow", "https://www.udemy.com/courses/search/?q=tensorflow"),
+    "pytorch": ("https://www.coursera.org/search?query=pytorch", "https://www.udemy.com/courses/search/?q=pytorch"),
+
+    # ── Cloud & DevOps ──
+    "aws": ("https://www.coursera.org/search?query=aws", "https://www.udemy.com/courses/search/?q=aws"),
+    "azure": ("https://www.coursera.org/search?query=azure", "https://www.udemy.com/courses/search/?q=azure"),
+    "google cloud": ("https://www.coursera.org/search?query=google%20cloud", "https://www.udemy.com/courses/search/?q=google%20cloud"),
+    "docker": ("https://www.coursera.org/search?query=docker", "https://www.udemy.com/courses/search/?q=docker"),
+    "kubernetes": ("https://www.coursera.org/search?query=kubernetes", "https://www.udemy.com/courses/search/?q=kubernetes"),
+    "ci/cd": ("https://www.coursera.org/search?query=ci%20cd", "https://www.udemy.com/courses/search/?q=ci%20cd"),
+
+    # ── Databases ──
+    "sql": ("https://www.coursera.org/search?query=sql", "https://www.udemy.com/courses/search/?q=sql"),
+    "mysql": ("https://www.coursera.org/search?query=mysql", "https://www.udemy.com/courses/search/?q=mysql"),
+    "mongodb": ("https://www.coursera.org/search?query=mongodb", "https://www.udemy.com/courses/search/?q=mongodb"),
+    "firebase": ("https://www.coursera.org/search?query=firebase", "https://www.udemy.com/courses/search/?q=firebase"),
+
+    # ── Core CS ──
+    "data structures": ("https://www.coursera.org/search?query=data%20structures", "https://www.udemy.com/courses/search/?q=data%20structures"),
+    "algorithms": ("https://www.coursera.org/search?query=algorithms", "https://www.udemy.com/courses/search/?q=algorithms"),
+    "operating systems": ("https://www.coursera.org/search?query=operating%20systems", "https://www.udemy.com/courses/search/?q=operating%20systems"),
+    "computer networks": ("https://www.coursera.org/search?query=computer%20networks", "https://www.udemy.com/courses/search/?q=computer%20networks"),
+    "dbms": ("https://www.coursera.org/search?query=dbms", "https://www.udemy.com/courses/search/?q=dbms"),
+
+    # ── Robotics / Embedded ──
+    "ros": ("https://www.coursera.org/search?query=robot%20operating%20system", "https://www.udemy.com/courses/search/?q=ros"),
+    "embedded systems": ("https://www.coursera.org/search?query=embedded%20systems", "https://www.udemy.com/courses/search/?q=embedded%20systems"),
+    "iot": ("https://www.coursera.org/search?query=iot", "https://www.udemy.com/courses/search/?q=iot"),
+    "arduino": ("https://www.coursera.org/search?query=arduino", "https://www.udemy.com/courses/search/?q=arduino"),
+    "raspberry pi": ("https://www.coursera.org/search?query=raspberry%20pi", "https://www.udemy.com/courses/search/?q=raspberry%20pi"),
+
+    # ── Soft Skills ──
+    "communication": ("https://www.coursera.org/search?query=communication%20skills", "https://www.udemy.com/courses/search/?q=communication"),
+    "leadership": ("https://www.coursera.org/search?query=leadership", "https://www.udemy.com/courses/search/?q=leadership"),
+    "problem solving": ("https://www.coursera.org/search?query=problem%20solving", "https://www.udemy.com/courses/search/?q=problem%20solving"),
+    "time management": ("https://www.coursera.org/search?query=time%20management", "https://www.udemy.com/courses/search/?q=time%20management"),
 }
 
 # ── MODEL ──────────────────────────────────────────────────────
